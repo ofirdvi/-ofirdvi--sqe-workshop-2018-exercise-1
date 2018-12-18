@@ -9,8 +9,7 @@
         "test:watch": "mocha-webpack --watch",
         "test": "mocha-webpack --webpack-config webpack.test.config.js --reporter=json",
         "coverage": "cross-env NODE_ENV=coverage nyc --reporter=json-summary npm run test",
-        "coverage": "cross-env NODE_ENV=coverage nyc --reporter=html npm run test",
-		"lint": "eslint -f html -o ./lint/eslint-report.html src"
+        "lint": "eslint -f json -o ./lint/eslint-report.json src"
     },
     "nyc": {
         "include": [
